@@ -9,13 +9,18 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist')
+    },
+    historyApiFallback: true,
+    compress: true,
     port: 7777
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
+        exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
           options: {
@@ -34,10 +39,6 @@ module.exports = {
       {
         test: /\.svg$/,
         use: ['@svgr/webpack']
-      },
-      {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/, // to import images and fonts

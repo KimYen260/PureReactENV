@@ -1,0 +1,59 @@
+{
+  "name": "purereactenv",
+  "version": "1.0.0",
+  "description": "Revise Version Frontend",
+  "main": "index.js",
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KimYen260/PureReactENV.git"
+  },
+  "keywords": [],
+  "author": "Kim.Yen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KimYen260/PureReactENV/issues"
+  },
+  "homepage": "https://github.com/KimYen260/PureReactENV#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@svgr/webpack": "^6.5.1",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "dotenv-webpack": "^8.0.1",
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "axios": "^1.2.2",
+    "date-fns": "^2.29.3",
+    "highcharts": "^10.3.2",
+    "highcharts-react-official": "^3.1.0",
+    "react": "^18.2.0",
+    "react-day-picker": "^8.4.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.1",
+    "styled-components": "^5.3.6"
+  }
+}
